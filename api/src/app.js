@@ -6,9 +6,13 @@ const routes = require('./routes/index.js');
 
 require('./db.js');
 
+
+//? Aquí se inicializa el servidor
 const server = express();
 
-server.name = 'API';
+
+
+server.name = 'API Dogs';
 
 server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 server.use(bodyParser.json({ limit: '50mb' }));
